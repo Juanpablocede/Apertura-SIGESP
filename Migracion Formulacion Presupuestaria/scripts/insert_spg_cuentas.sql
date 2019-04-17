@@ -1,0 +1,41 @@
+INSERT INTO spg_cuentas
+SELECT 
+	codemp,
+	estcla,
+	codestpro1,
+	codestpro2,
+	codestpro3,
+	codestpro4,
+	codestpro5,
+	spg_cuenta,
+	denominacion,
+	status,
+	sc_cuenta,
+	(enero+febrero+marzo+abril+mayo+junio+
+	julio+agosto+	septiembre+octubre+noviembre+diciembre),
+	precomprometido,
+	comprometido,
+	causado,
+	pagado,
+	aumento,
+	disminucion,
+	distribuir,
+	enero,
+	febrero,
+	marzo,
+	abril,
+	mayo,
+	junio,
+	julio,
+	agosto,
+	septiembre,
+	octubre,
+	noviembre ,
+	diciembre,
+	nivel,
+	referencia,
+	scgctaint,
+	sc_cuenta_art  
+FROM
+	spg_temporal
+
